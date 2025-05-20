@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS messages (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  job_id INTEGER NOT NULL,
+  sender_id INTEGER NOT NULL,
+  receiver_id INTEGER NOT NULL,
+  content TEXT NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(job_id) REFERENCES jobs(id),
+  FOREIGN KEY(sender_id) REFERENCES users(id),
+  FOREIGN KEY(receiver_id) REFERENCES users(id)
+);
