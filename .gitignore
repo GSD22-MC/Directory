@@ -1,4 +1,4 @@
 node_modules/
-server/database.sqlite
+server/db/database.sqlite
 *.log
 .DS_Store
