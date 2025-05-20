@@ -27,6 +27,21 @@ cd server
 npm run dev
 ```
 
+## API Example
+
+The server exposes endpoints for creating and listing jobs. With the server
+running on port `3001`, you can try them using `curl`:
+
+```bash
+# Create a job
+curl -X POST http://localhost:3001/api/jobs \
+  -H "Content-Type: application/json" \
+  -d '{"user_id":1,"title":"Fix sink","description":"Leaky faucet"}'
+
+# List jobs
+curl http://localhost:3001/api/jobs
+```
+
 ## Directory Structure
 ```
 /
