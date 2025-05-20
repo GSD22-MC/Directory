@@ -1,0 +1,24 @@
+# Node.js dependency directory
+node_modules/
+
+# Build output directories
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*.local
+
+# OS files
+.DS_Store
+
+# Testing and coverage directories
+coverage/
+
+# Misc
+*.log
